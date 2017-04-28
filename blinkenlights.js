@@ -1,4 +1,8 @@
-var pm_root = "http://" + location.hostname + ":" + location.port + "/pmapi";
+var pm_root;
+if (location.url == null) // Assume we are in a local file:
+    pm_root = "http://localhost:44323/pmapi"; // TODOXXX: Add a textbox to configure this?
+else // Assume we are being served by pmwebd (TODOXXX not necessarily true):
+    pm_root = "http://" + location.hostname + ":" + location.port + "/pmapi";
 var pm_context = -1;
 
 // ----------------------------------------------------------------------
