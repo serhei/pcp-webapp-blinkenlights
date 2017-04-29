@@ -4,6 +4,8 @@ This is a basic HTML demo demonstrating how to access Performance Co-Pilot metri
 
 The code is meant to be simple enough to quickly understand, rather than full-featured. For full-featured visualization of Performance Co-Pilot metrics in a web application, you probably want [Grafana](https://github.com/performancecopilot/pcp-webapp-grafana), [Graphite](https://github.com/performancecopilot/pcp-webapp-graphite) or [Vector](https://github.com/performancecopilot/pcp-webapp-vector).
 
+More information about PCP's web services is available in the [PCP quick reference guide](http://pcp.io/docs/guide.html#web).
+
 ## Give it a Spin
 
 Quickly, on Fedora: install the packages for PCP, `pcp-webapi` and `pcp-webapp-blinkenlights`. Launch `pmwebd` and open http://localhost:44323/blinkenlights. The page will be served from `pmwebd`'s resources folder (configured in `/etc/pcp/pmwebd/pmwebd.options`). This usually defaults to `/usr/share/pcp/webapps/blinkenlights`.
